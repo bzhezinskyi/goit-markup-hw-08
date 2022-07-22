@@ -1,0 +1,46 @@
+.footer {
+	background-color: $main-bg-cl;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer__container {
+	display: flex;
+	align-items: baseline;
+}
+
+.footer__blok + .footer__blok {
+	margin-left: 70px;
+}
+
+.footer__address {
+	width: 231px;
+
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	margin-bottom: 9px;
+	color: $white-txt-cl;
+	font-style: normal;
+}
+
+.footer__title {
+	margin-bottom: 20px;
+
+	font-weight: 700;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: $white-txt-cl;
+}
+
+.footer__input {
+	outline: none;
+	padding: 15px 16px;
+	width: 358px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: transparent;
+	color: $white-txt-cl;
+}
