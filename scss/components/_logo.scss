@@ -15,10 +15,12 @@
 .logo--white {
 	color: $white-txt-cl;
 }
-
-.header .logo {
-	margin-right: 93px;
+@media screen and (min-width: 768px) {
+	.header .logo {
+		margin-right: 93px;
+	}
 }
+
 .footer .logo {
 	margin-bottom: 20px;
 }

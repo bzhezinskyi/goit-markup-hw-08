@@ -7,8 +7,19 @@
 	padding-bottom: 0;
 }
 
-.peculiarities__list {
-	display: flex;
+@media screen and (max-width: 767px) {
+	.peculiarities__titel {
+		text-align: center;
+	}
+	.peculiarities__item {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.peculiarities__list {
+		display: flex;
+	}
 }
 
 .peculiarities__box {
@@ -36,11 +47,11 @@
 	color: $main-txt-cl;
 }
 
-.peculiarities__item {
-	width: calc((100% - 90px) / 4);
-	margin-right: 30px;
-}
+// .peculiarities__item {
+// 	width: calc((100% - 90px) / 4);
+// 	margin-right: 30px;
+// }
 
-.peculiarities__item:nth-child(4n) {
-	margin-right: 0px;
-}
+// .peculiarities__item:nth-child(4n) {
+// 	margin-right: 0px;
+// }
