@@ -1,5 +1,30 @@
+.menu {
+	display: flex;
+}
+
 @media screen and (max-width: 767px) {
-	.menu {
+	.menu,
+	.header .contacts {
 		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+		padding-top: 21px;
+		padding-bottom: 21px;
+
+		border-bottom: 1px solid $border-header-color;
+	}
+
+	.header__container {
+		display: flex;
+		align-items: center;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.header {
+		padding-top: 24px;
+		padding-bottom: 24px;
 	}
 }
