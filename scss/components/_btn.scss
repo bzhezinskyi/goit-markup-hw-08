@@ -18,14 +18,30 @@
 
 @media screen and (max-width: 767px) {
 	.menu-btn {
+		margin-left: auto;
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%);
 		padding: 0;
 		border: 0;
+
 		background-color: inherit;
 	}
 
 	.menu-btn__icon {
 		width: 40px;
 		height: 40px;
+	}
+
+	.menu-btn__icon-close {
+		display: none;
+	}
+	.menu-btn.is-open .menu-btn__icon-close {
+		display: block;
+	}
+	.menu-btn.is-open .menu-btn__icon-menu {
+		display: none;
 	}
 }
 
