@@ -2,13 +2,6 @@
 	display: flex;
 }
 
-// @media screen and (max-width: 767px) {
-// 	.menu,
-// 	.header .contacts {
-// 		display: none;
-// 	}
-// }
-
 .header {
 	position: relative;
 }
@@ -22,12 +15,21 @@
 
 @media screen and (max-width: 767px) {
 	.menu-container {
+		display: none;
 		position: absolute;
 		left: 0;
-		top: 100%;
+		top: 0;
 		background-color: $white-txt-cl;
 		width: 100%;
+		// height: 100%;
+		padding-top: 48px;
 		padding-left: 40px;
+		padding-bottom: 48px;
+		z-index: 1;
+	}
+
+	.menu-container.is-open {
+		display: block;
 	}
 }
 

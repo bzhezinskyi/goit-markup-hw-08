@@ -22,7 +22,11 @@
 	}
 
 	.site-nav__item:last-child {
-		margin-bottom: 0;
+		margin-bottom: 302px;
+	}
+
+	.site-nav__link--current {
+		color: $accent-cl;
 	}
 }
 

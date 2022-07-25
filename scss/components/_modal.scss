@@ -8,6 +8,7 @@
 	background: rgba(0, 0, 0, 0.2);
 	opacity: 1;
 	transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+	overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -111,7 +112,7 @@
 	color: var(--text-color);
 }
 
-.for__box {
+.form__box {
 	position: relative;
 }
 
@@ -205,4 +206,8 @@
 	&:focus {
 		background-color: $accent-btn-cl;
 	}
+}
+
+body.modal-open {
+	overflow: hidden;
 }
