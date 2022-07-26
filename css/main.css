@@ -56,12 +56,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 786px;
+    width: 786px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    width: 1200px;
   }
 }
 .menu {
@@ -411,52 +411,56 @@ body {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero/Header-mobal.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero/Header-mobal.jpg);
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero/Header-mobal@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero/Header-mobal@2x.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero/Header-tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero/Header-tablet.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero/Header-tablet@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero/Header-tablet@2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 480px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero/Header-mobal.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero/Header-mobal.jpg);
+  }
+}
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero/Header-mobal@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero/Header-mobal@2x.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero/Header-desctop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero/Header-desctop.jpg);
     background-size: 1600px;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero/Header-desctop@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero/Header-desctop@2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero__titel {
     font-size: 44px;
     line-height: 1.36;
@@ -1012,11 +1016,11 @@ body {
   position: absolute;
   left: 12px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 18px;
   height: 18px;
   fill: #212121;
-  -webkit-transform: translateY -50%;
-          transform: translateY -50%;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
