@@ -9,6 +9,7 @@
 	opacity: 1;
 	transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
 	overflow-y: scroll;
+	z-index: 2;
 }
 
 .backdrop.is-hidden {

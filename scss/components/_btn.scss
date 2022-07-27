@@ -20,12 +20,11 @@
 	.menu-btn {
 		margin-left: auto;
 		position: absolute;
-		top: 50%;
-		right: 15px;
-		transform: translateY(-50%);
+		top: 10px;
+		left: 90%;
 		padding: 0;
 		border: 0;
-		z-index: 2;
+		z-index: 1;
 
 		background-color: inherit;
 	}
@@ -81,10 +80,6 @@
 	box-shadow: none;
 
 	transition: color 250ms $cubic, background-color 250ms $cubic, box-shadow 250ms $cubic;
-
-	&:nth-child(-n + 3) {
-		margin-bottom: 15px;
-	}
 
 	&:hover,
 	&:focus {
