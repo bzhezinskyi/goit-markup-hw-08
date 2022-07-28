@@ -75,8 +75,12 @@
 }
 
 @media screen and (min-width: 768px) {
-	.contacts {
+	.menu-subcontainer {
 		margin-left: auto;
+	}
+
+	.contacts {
+		display: flex;
 	}
 
 	.contacts__icon {
@@ -94,7 +98,6 @@
 	}
 
 	.contacts {
-		display: flex;
 		flex-direction: column;
 	}
 }
@@ -105,6 +108,7 @@
 			margin-left: 50px;
 		}
 		& .contacts__link {
+			display: inline-block;
 			font-size: 14px;
 			line-height: 1.14;
 		}
